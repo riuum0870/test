@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+    <title>profile</title>
+</head>
+<body>
+    <header>
+        <div class="card">
+            <section class="main">
+                <p class="name">Milky Way</p>
+                <p class="subname">Галактика</p>
+            </section>
+            
+            <section class="more">
+                <p>The Milky Way is the galaxy that includes the Solar System, with the name describing 
+                    the galaxy's appearance from Earth.</p>
+            </section>
+
+            <section class="info">
+                <div class="social-links">
+                    <a href="https://github.com/" style="color:#24292e" class="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" style="color:#C13584" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=2SswHtpjMCw" style="color:#FF0000" class="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <button id="openBtn">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i>
+                </button>
+            </section>
+        </div>
+    </header>
+    <script>
+        var buttonEl=document.getElementById("openBtn");
+        var cardEl=document.querySelector('.card');
+
+        buttonEl.addEventListener('click', function(){
+            cardEl.classList.toggle('opened');
+        })
+    </script>
+</body>
+</html>
